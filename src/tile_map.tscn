@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6e68q4tq6cty"]
+
+[ext_resource type="Texture2D" uid="uid://d1hlm1b40mxpi" path="res://Assets/Tilemap/tilemap_grayscale.png" id="1_efviq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rkrnq"]
+texture = ExtResource("1_efviq")
+separation = Vector2i(1, 1)
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+5:3/0 = 0
+5:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_0/angular_velocity = 0.0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5n501"]
+texture = ExtResource("1_efviq")
+separation = Vector2i(1, 1)
+
+[sub_resource type="TileSet" id="TileSet_fjol5"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_rkrnq")
+sources/1 = SubResource("TileSetAtlasSource_5n501")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_fjol5")
+format = 2

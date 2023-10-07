@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1fftfqwmjwg3"]
+
+[ext_resource type="Script" path="res://src/level.gd" id="1_63ln3"]
+[ext_resource type="PackedScene" uid="uid://ckrtfu4pci38k" path="res://src/bg.tscn" id="2_773ca"]
+
+[node name="level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_63ln3")
+
+[node name="level1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 47.0
+offset_right = 94.0
+offset_bottom = 78.0
+text = "1"
+
+[node name="level2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 47.0
+offset_right = 170.0
+offset_bottom = 78.0
+text = "2"
+
+[node name="level3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 47.0
+offset_right = 243.0
+offset_bottom = 78.0
+text = "3"
+
+[node name="level4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 90.0
+offset_right = 133.0
+offset_bottom = 121.0
+text = "4"
+
+[node name="level5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 91.0
+offset_right = 212.0
+offset_bottom = 122.0
+text = "5"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 140.0
+offset_right = 308.0
+offset_bottom = 171.0
+text = "Back"
+
+[node name="bg" parent="." instance=ExtResource("2_773ca")]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 16.0
+offset_right = 243.0
+offset_bottom = 56.0
+text = "Level selection"
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://beu0hyyppuv2c"]
+
+[ext_resource type="PackedScene" uid="uid://c6e68q4tq6cty" path="res://src/tile_map.tscn" id="1_n3yiu"]
+[ext_resource type="PackedScene" uid="uid://0vdq13ikxf20" path="res://src/player.tscn" id="2_eqgfs"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource("1_n3yiu")]
+layer_0/tile_data = PackedInt32Array(655360, 327680, 3, 655361, 327680, 3, 655362, 327680, 3, 655363, 327680, 3, 655364, 327680, 3, 655365, 327680, 3, 655366, 327680, 3, 655367, 327680, 3, 655368, 327680, 3, 655369, 327680, 3, 655370, 327680, 3, 655371, 327680, 3, 655372, 327680, 3, 655373, 327680, 3, 655374, 327680, 3, 655375, 327680, 3, 655376, 327680, 3, 655377, 327680, 3, 655378, 327680, 3, 655379, 327680, 3)
+
+[node name="player" parent="." instance=ExtResource("2_eqgfs")]
+position = Vector2(59, 151)
