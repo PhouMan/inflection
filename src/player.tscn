@@ -118,7 +118,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -199,7 +199,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -234,4 +234,5 @@ zoom = Vector2(1.29, 1.29)
 position = Vector2(0.5, 0)
 scale = Vector2(1.0625, 1)
 sprite_frames = SubResource("SpriteFrames_snkh1")
-animation = &"Idle"
+animation = &"run"
+frame_progress = 0.342344
