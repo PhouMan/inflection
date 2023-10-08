@@ -9,7 +9,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	$Portal_Anim.play("Idle")
 
 # Teleport to next level
 func _on_body_entered(body: Node2D) -> void:
@@ -17,4 +17,6 @@ func _on_body_entered(body: Node2D) -> void:
 		if isFinalDoor:
 			get_tree().quit()
 		else:
+			PlayerData.player_position = Vector2(59, 215)
+			body.set_position(PlayerData.player_position)
 			get_tree().change_scene_to_file(f)
