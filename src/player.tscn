@@ -216,7 +216,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_y8ahe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -234,5 +234,5 @@ zoom = Vector2(1.29, 1.29)
 position = Vector2(0.5, 0)
 scale = Vector2(1.0625, 1)
 sprite_frames = SubResource("SpriteFrames_snkh1")
-animation = &"run"
-frame_progress = 0.342344
+animation = &"Idle"
+frame_progress = 0.0419978
