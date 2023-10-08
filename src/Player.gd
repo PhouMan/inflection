@@ -9,7 +9,14 @@ var jumpCount = 0
 var isJumping = false
 var isFalling = false
 
+
 func _physics_process(delta: float) -> void:
+	
+	#player position for the singleton warp script
+	PlayerData.player_position = self.global_position
+	
+	does_player_warp()
+	
 	# Horizontal Speed
 	var xSpeed = SPEED
 	
@@ -44,12 +51,13 @@ func _physics_process(delta: float) -> void:
 	if isFalling:
 		$playerAnimation.play("fall")
 	
+	#Flips the animation based on the direction using horizontal velocity
 	if xSpeed > 0:
 		$playerAnimation.flip_h = false
 	elif xSpeed < 0:
 		$playerAnimation.flip_h = true
 			
-	
+	#animations that play when the player is on the ground
 	if not isFalling and not isJumping:
 		if xSpeed > 0:
 			$playerAnimation.play("run")
@@ -58,9 +66,20 @@ func _physics_process(delta: float) -> void:
 		else: 
 			$playerAnimation.play("Idle")
 		
-	
 	velocity = Vector2(xSpeed, ySpeed)
 	move_and_slide()
 	
+#Function for when the player dies to hazard
 func death() -> void:
 	get_tree().reload_current_scene()
+
+#The player warping function
+func does_player_warp() -> void:
+	if Input.is_action_just_pressed("warp"):
+		var parent_node = get_parent()
+		parent_node.switchScene()
+
+func parent_node_origin():
+	var parent_node = get_parent()
+	return parent_node.origin_vec
+

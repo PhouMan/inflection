@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://blugtpfl2mxs4"]
+
+[sub_resource type="GDScript" id="GDScript_2w4sa"]
+script/source = "extends Node
+
+
+#This be the global sington for the player postion
+var player_position = Vector2(59, 215)
+"
+
+[node name="player_Data" type="Node"]
+script = SubResource("GDScript_2w4sa")

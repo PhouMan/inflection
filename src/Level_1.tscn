@@ -1,14 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://beu0hyyppuv2c"]
+[gd_scene load_steps=5 format=3 uid="uid://beu0hyyppuv2c"]
 
+[ext_resource type="Script" path="res://src/Level_1.gd" id="1_ai0f4"]
 [ext_resource type="PackedScene" uid="uid://0vdq13ikxf20" path="res://src/player.tscn" id="2_eqgfs"]
 [ext_resource type="PackedScene" uid="uid://d3tjeir21ybe4" path="res://src/worldTiles.tscn" id="3_bijd6"]
 [ext_resource type="PackedScene" uid="uid://grpvd2gq62af" path="res://src/spikes.tscn" id="4_d2hsk"]
 
-[node name="Node2D" type="Node2D"]
+[node name="world1" type="Node2D" groups=["main_world"]]
 position = Vector2(1, 2)
-
-[node name="player" parent="." instance=ExtResource("2_eqgfs")]
-position = Vector2(59, 215)
+script = ExtResource("1_ai0f4")
 
 [node name="Spike" parent="." instance=ExtResource("4_d2hsk")]
 position = Vector2(252, 204)
@@ -43,3 +42,6 @@ layer_0/tile_data = PackedInt32Array(1835009, 720896, 2, 1835010, 786432, 1, 183
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(219, 146)
 zoom = Vector2(1.12, 1.12)
+
+[node name="player" parent="." instance=ExtResource("2_eqgfs")]
+position = Vector2(59, 215)

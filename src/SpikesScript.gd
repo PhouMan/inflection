@@ -1,5 +1,5 @@
 extends Area2D
-
+@export var alt_world_check = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
