@@ -39,12 +39,12 @@ text = "Quit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 182.0
-offset_top = 26.0
-offset_right = 290.0
-offset_bottom = 63.0
+offset_left = 204.0
+offset_top = 35.0
+offset_right = 312.0
+offset_bottom = 72.0
 theme_override_colors/default_color = Color(0, 0.376471, 0, 1)
-text = "Memory warp"
+text = "Inflection"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level" to="." method="_on_level_pressed"]
