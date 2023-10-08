@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-
-
 const GRAVITY := 55
 const SPEED = 100.0
 const JUMP_VELOCITY = -50.0
@@ -62,3 +60,6 @@ func _physics_process(delta: float) -> void:
 	
 	velocity = Vector2(xSpeed, ySpeed)
 	move_and_slide()
+	
+func death() -> void:
+	get_tree().reload_current_scene()
