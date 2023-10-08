@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://lb6ttwy8ec35"]
+[gd_scene load_steps=5 format=3 uid="uid://lb6ttwy8ec35"]
 
+[ext_resource type="Script" path="res://src/Level_4.gd" id="1_8yhkw"]
 [ext_resource type="PackedScene" uid="uid://0vdq13ikxf20" path="res://src/player.tscn" id="1_b3wxe"]
 [ext_resource type="PackedScene" uid="uid://d3tjeir21ybe4" path="res://src/worldTiles.tscn" id="2_6y857"]
 [ext_resource type="PackedScene" uid="uid://grpvd2gq62af" path="res://src/spikes.tscn" id="3_1slh0"]
 
 [node name="world4" type="Node2D"]
+script = ExtResource("1_8yhkw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(239, 112)
@@ -38,7 +40,7 @@ position = Vector2(8, 0)
 position = Vector2(16, 0)
 
 [node name="Spike3" parent="." instance=ExtResource("3_1slh0")]
-position = Vector2(109, 28)
+position = Vector2(99, 28)
 
 [node name="Spike3" parent="Spike3" instance=ExtResource("3_1slh0")]
 position = Vector2(8, 0)
@@ -47,7 +49,7 @@ position = Vector2(8, 0)
 position = Vector2(16, 0)
 
 [node name="Spike4" parent="." instance=ExtResource("3_1slh0")]
-position = Vector2(160, 4)
+position = Vector2(156, 4)
 rotation = 3.14159
 
 [node name="Spike3" parent="Spike4" instance=ExtResource("3_1slh0")]
@@ -76,7 +78,7 @@ position = Vector2(8, 0)
 position = Vector2(16, 0)
 
 [node name="Spike8" parent="." instance=ExtResource("3_1slh0")]
-position = Vector2(308, 5)
+position = Vector2(315, 4)
 rotation = 3.14159
 
 [node name="Spike3" parent="Spike8" instance=ExtResource("3_1slh0")]
@@ -86,7 +88,7 @@ position = Vector2(8, 0)
 position = Vector2(16, 0)
 
 [node name="Spike7" parent="." instance=ExtResource("3_1slh0")]
-position = Vector2(252, 28)
+position = Vector2(258, 28)
 
 [node name="Spike3" parent="Spike7" instance=ExtResource("3_1slh0")]
 position = Vector2(8, 0)
@@ -113,7 +115,7 @@ position = Vector2(8, 0)
 position = Vector2(16, 0)
 
 [node name="Spike9" parent="." instance=ExtResource("3_1slh0")]
-position = Vector2(331, 28)
+position = Vector2(342, 28)
 
 [node name="Spike3" parent="Spike9" instance=ExtResource("3_1slh0")]
 position = Vector2(8, 0)
