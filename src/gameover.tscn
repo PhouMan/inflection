@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://wbs4kf3y5e2q"]
+
+[ext_resource type="Texture2D" uid="uid://cqbh2hgbderse" path="res://Assets/over.png" id="1_hi457"]
+
+[node name="gameover" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(238, 129)
+zoom = Vector2(1.015, 1.015)
+
+[node name="Over" type="Sprite2D" parent="."]
+position = Vector2(237, 123)
+scale = Vector2(0.160374, 0.149419)
+texture = ExtResource("1_hi457")

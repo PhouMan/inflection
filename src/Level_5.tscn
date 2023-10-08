@@ -69,4 +69,4 @@ position = Vector2(345, 220)
 
 [node name="Portal" parent="." instance=ExtResource("5_tes3v")]
 position = Vector2(443, 44)
-isFinalDoor = true
+f = "res://src/gameover.tscn"
