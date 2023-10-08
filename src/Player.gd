@@ -71,7 +71,6 @@ func _physics_process(delta: float) -> void:
 	
 #Function for when the player dies to hazard
 func death() -> void:
-	
 	PlayerData.player_position = Vector2(59, 215)
 	self.set_position(PlayerData.player_position)
 	get_tree().reload_current_scene()
@@ -82,7 +81,4 @@ func does_player_warp() -> void:
 		var parent_node = get_parent()
 		parent_node.switchScene()
 
-func parent_node_origin():
-	var parent_node = get_parent()
-	return parent_node.origin_vec
 
