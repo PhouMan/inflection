@@ -12,10 +12,10 @@ var isFalling = false
 
 func _physics_process(delta: float) -> void:
 	
+	does_player_warp()
+	
 	#player position for the singleton warp script
 	PlayerData.player_position = self.global_position
-	
-	does_player_warp()
 	
 	# Horizontal Speed
 	var xSpeed = SPEED
@@ -71,6 +71,9 @@ func _physics_process(delta: float) -> void:
 	
 #Function for when the player dies to hazard
 func death() -> void:
+	
+	PlayerData.player_position = Vector2(59, 215)
+	self.set_position(PlayerData.player_position)
 	get_tree().reload_current_scene()
 
 #The player warping function

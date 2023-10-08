@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccga3vxn82fe8"]
+[gd_scene load_steps=4 format=3 uid="uid://ccga3vxn82fe8"]
 
 [ext_resource type="PackedScene" uid="uid://d3tjeir21ybe4" path="res://src/worldTiles.tscn" id="2_d7dyv"]
+[ext_resource type="PackedScene" uid="uid://0vdq13ikxf20" path="res://src/player.tscn" id="2_hri7i"]
 
 [sub_resource type="GDScript" id="GDScript_eodgl"]
 script/source = "extends Node2D
@@ -11,16 +12,7 @@ var origin_vec = Vector2(59, 215)
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color.WHITE) 
 	
-	#Loads player scene
-	var player_scene = preload(\"res://src/player.tscn\")
-	#instantiates the player scene
-	var player_instance = player_scene.instantiate()
-	
-	#This sets the player position
-	player_instance.global_position = PlayerData.player_position
-	
-	#this adds the player to the scene
-	add_child(player_instance)
+	$player.set_position(PlayerData.player_position)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -40,3 +32,6 @@ layer_0/tile_data = PackedInt32Array(1835009, 720896, 2, 1835010, 786432, 1, 183
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(219, 146)
 zoom = Vector2(1.12, 1.12)
+
+[node name="player" parent="." instance=ExtResource("2_hri7i")]
+position = Vector2(59, 215)

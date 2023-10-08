@@ -7,15 +7,9 @@ var origin_vec = Vector2(59, 215)
 func _ready():
 	
 	RenderingServer.set_default_clear_color(Color.BLACK) 
-	#Loads player scene
-	var player_scene = preload("res://src/player.tscn")
-	#instantiates the player scene
-	var player_instance = player_scene.instantiate()
 	
-	#This sets the player position
-	player_instance.global_position = PlayerData.player_position
-	
-	add_child(player_instance)
+	$player.set_position(PlayerData.player_position)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
