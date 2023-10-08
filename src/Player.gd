@@ -3,8 +3,8 @@ extends CharacterBody2D
 
 
 const GRAVITY := 55
-const SPEED = 100.0
-const JUMP_VELOCITY = -50.0
+const SPEED = 30.0
+const JUMP_VELOCITY = -40.0
 const MAX_JUMP := 2
 var ySpeed = 0
 var jumpCount = 0
