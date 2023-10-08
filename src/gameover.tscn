@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtwubjjpnseo6"]
+[gd_scene load_steps=3 format=3 uid="uid://dtwubjjpnseo6"]
 
+[ext_resource type="Script" path="res://src/gameover.gd" id="1_7lybo"]
 [ext_resource type="Texture2D" uid="uid://cqbh2hgbderse" path="res://Assets/over.png" id="1_hi457"]
 
 [node name="gameover" type="Node2D"]
+script = ExtResource("1_7lybo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(238, 129)
@@ -12,3 +14,12 @@ zoom = Vector2(1.015, 1.015)
 position = Vector2(237, 123)
 scale = Vector2(0.160374, 0.149419)
 texture = ExtResource("1_hi457")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 170.0
+offset_top = 169.0
+offset_right = 301.0
+offset_bottom = 200.0
+text = "Return to menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
