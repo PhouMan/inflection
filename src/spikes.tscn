@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://grpvd2gq62af"]
 
-[ext_resource type="Script" path="res://Area2D.gd" id="1_dgrpd"]
+[ext_resource type="Script" path="res://src/SpikesScript.gd" id="1_brdkk"]
 [ext_resource type="Texture2D" uid="uid://bg04aococuvcu" path="res://Assets/16-bit-spike-Sheet.png" id="2_x7q26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kh7dj"]
 size = Vector2(8, 7)
 
 [node name="Spike" type="Area2D"]
-script = ExtResource("1_dgrpd")
+script = ExtResource("1_brdkk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 0.00259129
