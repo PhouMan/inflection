@@ -227,9 +227,6 @@ texture = ExtResource("2_aig7j")
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_3aktx")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.29, 1.29)
-
 [node name="playerAnimation" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.5, 0)
 scale = Vector2(1.0625, 1)

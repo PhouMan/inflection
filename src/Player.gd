@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const GRAVITY := 55
+const GRAVITY := 40
 const SPEED = 100.0
-const JUMP_VELOCITY = -50.0
+const JUMP_VELOCITY = -400
 const MAX_JUMP := 2
 var ySpeed = 0
 var jumpCount = 0
@@ -19,8 +19,9 @@ func _physics_process(delta: float) -> void:
 			isJumping = true
 		elif ySpeed > 0:
 			isFalling = true
-			
-		ySpeed += GRAVITY * delta 
+		
+		if ySpeed < 200:
+			ySpeed += GRAVITY
 	
 	else:
 		jumpCount = 0
