@@ -72,4 +72,6 @@ text = "Level selection"
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

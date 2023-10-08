@@ -17,4 +17,4 @@ func _process(delta: float) -> void:
 	
 func switchScene()-> void:
 	PlayerData.player_position = $player.global_position
-	get_tree().change_scene_to_file("res://src/Level_5_alt.tscn")
+	get_tree().change_scene_to_file("res://src/Level_3_alt.tscn")
