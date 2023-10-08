@@ -16,6 +16,22 @@ layer_0/tile_data = PackedInt32Array(1835009, 720896, 2, 1835010, 786432, 1, 183
 position = Vector2(239, 128)
 zoom = Vector2(1.015, 1.015)
 
+[node name="Label" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 178.0
+offset_right = 157.0
+offset_bottom = 204.0
+scale = Vector2(0.507281, 0.478998)
+text = "Press W to jump"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 331.0
+offset_top = 138.0
+offset_right = 485.0
+offset_bottom = 164.0
+scale = Vector2(0.522709, 0.647126)
+text = "Press space to warp"
+
 [node name="player" parent="." instance=ExtResource("2_eqgfs")]
 position = Vector2(59, 215)
 
@@ -45,19 +61,3 @@ position = Vector2(48, 0)
 
 [node name="Spike8" parent="Spike" instance=ExtResource("4_d2hsk")]
 position = Vector2(56, 0)
-
-[node name="Label" type="Label" parent="."]
-offset_left = 31.0
-offset_top = 178.0
-offset_right = 157.0
-offset_bottom = 204.0
-scale = Vector2(0.507281, 0.478998)
-text = "Press W to jump"
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 331.0
-offset_top = 138.0
-offset_right = 485.0
-offset_bottom = 164.0
-scale = Vector2(0.522709, 0.647126)
-text = "Press space to warp"
