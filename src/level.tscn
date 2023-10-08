@@ -14,61 +14,65 @@ script = ExtResource("1_63ln3")
 
 [node name="level1" type="Button" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 47.0
-offset_right = 94.0
-offset_bottom = 78.0
+offset_left = 106.0
+offset_top = 66.0
+offset_right = 124.0
+offset_bottom = 97.0
 text = "1"
 
 [node name="level2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 152.0
-offset_top = 47.0
-offset_right = 170.0
-offset_bottom = 78.0
+offset_left = 241.0
+offset_top = 66.0
+offset_right = 259.0
+offset_bottom = 97.0
 text = "2"
 
 [node name="level3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 225.0
-offset_top = 47.0
-offset_right = 243.0
-offset_bottom = 78.0
+offset_left = 364.0
+offset_top = 65.0
+offset_right = 382.0
+offset_bottom = 96.0
 text = "3"
 
 [node name="level4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 115.0
-offset_top = 90.0
-offset_right = 133.0
-offset_bottom = 121.0
+offset_left = 172.0
+offset_top = 137.0
+offset_right = 190.0
+offset_bottom = 168.0
 text = "4"
 
 [node name="level5" type="Button" parent="."]
 layout_mode = 0
-offset_left = 194.0
-offset_top = 91.0
-offset_right = 212.0
-offset_bottom = 122.0
+offset_left = 310.0
+offset_top = 136.0
+offset_right = 328.0
+offset_bottom = 167.0
 text = "5"
 
 [node name="Back" type="Button" parent="."]
 layout_mode = 0
-offset_left = 263.0
-offset_top = 140.0
-offset_right = 308.0
-offset_bottom = 171.0
+offset_left = 412.0
+offset_top = 190.0
+offset_right = 457.0
+offset_bottom = 221.0
 text = "Back"
 
 [node name="bg" parent="." instance=ExtResource("2_773ca")]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 101.0
+offset_left = 183.0
 offset_top = 16.0
-offset_right = 243.0
+offset_right = 325.0
 offset_bottom = 56.0
 text = "Level selection"
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

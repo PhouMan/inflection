@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsjxpp357xdda"
-path="res://.godot/imported/tilemap_color.png-9f36345637aa144ebd11cfa5ba6c2d8d.ctex"
+uid="uid://blb8iq8lowm36"
+path="res://.godot/imported/Purple Portal Sprite Sheet.png-51111265d61b14a2cc6bd06ac195ea69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilemap/tilemap_color.png"
-dest_files=["res://.godot/imported/tilemap_color.png-9f36345637aa144ebd11cfa5ba6c2d8d.ctex"]
+source_file="res://Assets/Purple Portal Sprite Sheet.png"
+dest_files=["res://.godot/imported/Purple Portal Sprite Sheet.png-51111265d61b14a2cc6bd06ac195ea69.ctex"]
 
 [params]
 
